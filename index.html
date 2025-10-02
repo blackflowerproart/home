@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Flower Pro Art - Home</title>
+    <style>
+        /* الخطوط */
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300&display=swap');
+
+        /* التصميم الأساسي (الخلفية سوداء والكتابة بيضاء) */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #000000; /* الخلفية سوداء */
+            color: #ffffff; /* الكتابة بيضاء */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* عنوان الشركة الرئيسي */
+        .main-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 4.5em; /* خط كبير وجميل */
+            font-weight: 700;
+            margin-bottom: 5px;
+            letter-spacing: 5px; /* تباعد لإضفاء جمالية */
+        }
+
+        /* العنوان الفرعي */
+        .sub-title {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.8em; /* خط أصغر ونوع مختلف */
+            font-weight: 300;
+            margin-bottom: 70px;
+            letter-spacing: 2px;
+            color: #cccccc; /* لون رمادي فاتح للتباين */
+        }
+
+        /* قسم الشعارات */
+        .sections-container {
+            display: flex;
+            flex-wrap: wrap; /* للسماح بتنسيق مرن على الشاشات الصغيرة */
+            justify-content: center;
+            gap: 40px;
+            max-width: 900px;
+        }
+
+        /* تصميم الشعار الدائري القابل للضغط */
+        .section-link {
+            text-decoration: none;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 150px;
+            transition: transform 0.3s ease;
+        }
+        .section-link:hover {
+            transform: scale(1.05);
+        }
+
+        /* الصورة الدائرية */
+        .section-logo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* لجعلها مدورة */
+            overflow: hidden;
+            border: 3px solid #ffffff; /* إطار أبيض حول الشعار */
+            margin-bottom: 15px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+        }
+        .section-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        
+        /* اسم القسم تحت الشعار */
+        .section-name {
+            font-size: 1.1em;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        /* تعديلات الشاشات الصغيرة */
+        @media (max-width: 600px) {
+            .main-title {
+                font-size: 3em;
+            }
+            .sub-title {
+                font-size: 1.5em;
+                margin-bottom: 50px;
+            }
+            .section-logo {
+                width: 120px;
+                height: 120px;
+            }
+            .sections-container {
+                gap: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="main-title">Black Flower Pro Art</div>
+    <div class="sub-title">Professional Art</div>
+
+    <div class="sections-container">
+
+        <a href="https://raw.githubusercontent.com/blackflowerproart/home/main/advertising.html" class="section-link" target="_blank">
+            <div class="section-logo">
+                <img src="https://raw.githubusercontent.com/blackflowerproart/home/main/black.jpg" alt="Advertising Section">
+            </div>
+            <span class="section-name">الدعاية والإعلان</span>
+        </a>
+
+        <a href="https://raw.githubusercontent.com/blackflowerproart/home/main/interior-design.html" class="section-link" target="_blank">
+            <div class="section-logo">
+                <img src="https://raw.githubusercontent.com/blackflowerproart/home/main/wight.jpg" alt="Interior Design Section">
+            </div>
+            <span class="section-name">التصميم الداخلي</span>
+        </a>
+
+        <a href="https://raw.githubusercontent.com/blackflowerproart/home/main/web-design.html" class="section-link" target="_blank">
+            <div class="section-logo">
+                <img src="https://raw.githubusercontent.com/blackflowerproart/home/main/wight.jpg" alt="Web Design Section">
+            </div>
+            <span class="section-name">تصميم الويب والتطبيقات</span>
+        </a>
+
+    </div>
+
+</body>
+</html>
