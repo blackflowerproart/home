@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Design - Contact</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .nav-links {
+            margin-bottom: 20px;
+        }
+        .nav-links a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: blue;
+        }
+        form {
+            max-width: 500px;
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #333;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Contact Us</h1>
+
+    <div class="nav-links">
+        <a href="info.html">Information</a> |
+        <a href="portfolio.html">Work (Portfolio)</a> |
+        <a href="contact.html">Contact</a> |
+        <a href="../index.html">Back to Home</a>
+    </div>
+
+    <h2>Contact Information</h2>
+    <p><strong>Address:</strong> Amman - Jordan - North Marka</p>
+    <p><strong>Phone:</strong> 0787126778</p>
+    <p><strong>Email:</strong> blackflowerproart@gmail.com</p>
+
+    <h2>Send Us a Message</h2>
+
+    <form action="https://formsubmit.co/blackflowerproart@gmail.com" method="POST">
+        
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="Name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="Email" required>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="Subject" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="Message" rows="5" required></textarea>
+
+        <input type="hidden" name="_captcha" value="false">
+
+        <button type="submit">Send Message</button>
+    </form>
+    
+</body>
+</html>
