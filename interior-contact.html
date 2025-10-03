@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا | نموذج بريد</title>
+    <!-- تضمين خطوط لتحسين المظهر -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;700&display=swap" rel="stylesheet">
+    <style>
+        /* تصميم عام */
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f0f4f8; /* خلفية فاتحة ومريحة */
+            color: #000000; /* النص الرئيسي أسود نقي */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            text-align: right;
+            margin: 0;
+            padding: 40px 20px;
+            direction: rtl;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff; /* خلفية بيضاء للنموذج */
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .header-title {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #000000; /* خط فاصل أسود */
+            padding-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #000000; /* العنوان أسود */
+            margin: 0;
+        }
+
+        p {
+            color: #333333; /* لون رمادي داكن للفقرات */
+            font-weight: 300;
+        }
+        
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 700;
+            color: #000000;
+            text-align: right;
+        }
+        
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #cccccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 1em;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+        
+        .contact-form input[type="text"]:focus,
+        .contact-form input[type="email"]:focus,
+        .contact-form textarea:focus {
+            border-color: #000000; /* حدود سوداء عند التركيز */
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* ظل أسود خفيف */
+            outline: none;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .submit-button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #000000; /* زر الإرسال أسود */
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .submit-button:hover {
+            background-color: #333333; /* لون أغمق عند التحويم */
+            transform: translateY(-2px);
+        }
+
+        /* زر العودة إلى الصفحة الرئيسية */
+        .back-button {
+            display: inline-block;
+            margin-bottom: 30px;
+            padding: 12px 25px;
+            background-color: #000000; /* زر العودة أسود */
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background-color 0.3s, opacity 0.3s;
+            border: 2px solid #000000;
+        }
+
+        .back-button:hover {
+            background-color: #333333;
+            opacity: 0.9;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <!-- زر العودة إلى الصفحة الرئيسية (index.html) -->
+    <a href="index.html" class="back-button">العودة إلى الصفحة الرئيسية</a>
+
+    <div class="container" id="contact-container">
+        <div class="header-title">
+            <h1>تواصل معنا</h1>
+            <p>يسعدنا استقبال استفساراتك وطلباتك. يرجى ملء النموذج أدناه وسنتواصل معك قريباً.</p>
+        </div>
+
+        <!-- تم تعديل وسم النموذج لاستخدام FormSubmit وتوجيهه إلى البريد المطلوب -->
+        <form 
+            class="contact-form" 
+            action="https://formsubmit.co/blackflowerproart@gmail.com" 
+            method="POST"
+        >
+            <!-- FormSubmit يحتاج إلى هذا الحقل المخفي لكي يتأكد من أن البريد الإلكتروني المرسل إليه يملكه هذا النموذج -->
+            <!-- يمكنك إضافة حقل _next لتحديد صفحة ال redirect بعد الإرسال، لكن تركته افتراضياً هنا -->
+            <!-- <input type="hidden" name="_next" value="http://yoursite.com/thankyou.html"> -->
+
+            <div>
+                <label for="name">الاسم الكامل:</label>
+                <input type="text" id="name" name="الاسم_الكامل" required>
+            </div>
+            <div>
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" name="البريد_الإلكتروني" required>
+            </div>
+            <div>
+                <label for="message">الرسالة:</label>
+                <textarea id="message" name="الرسالة" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">إرسال الرسالة</button>
+        </form>
+    </div>
+
+</body>
+</html>

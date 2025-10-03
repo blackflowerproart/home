@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Interior Design | التصميم الداخلي</title>
+    <!-- تضمين خطوط لتحسين المظهر -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;700&display=swap" rel="stylesheet">
+    <style>
+        /* الخلفية بيضاء والكتابة سوداء (تصميم معكوس لصفحة الإعلانات) */
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #ffffff; /* الخلفية بيضاء */
+            color: #000000; /* الكتابة سوداء */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            margin: 0;
+            padding-top: 50px;
+            direction: rtl;
+        }
+        
+        /* تصميم الشعار */
+        .header-logo {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            border-radius: 50%;
+            border: 4px solid #000000; /* إطار أسود */
+        }
+        .header-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* الشعار wight.jpg */
+            background-color: #ffffff;
+        }
+        
+        /* العنوان الإنجليزي (أولاً) */
+        h1 {
+            font-size: 2.2em;
+            color: #000000;
+            margin: 0 0 5px 0;
+        }
+
+        /* العنوان العربي (ثانياً) */
+        h2.arabic-title {
+            font-size: 1.5em;
+            color: #000000;
+            margin: 0 0 40px 0;
+            border-bottom: 2px solid #000000;
+            padding-bottom: 10px;
+            font-weight: 300;
+        }
+
+        /* قائمة التنقل */
+        .nav-menu {
+            display: flex;
+            flex-direction: column;
+            gap: 15px; /* تم تصغير المسافة بين الأقسام */
+            width: 75%;
+            max-width: 350px;
+        }
+        
+        /* تصميم الروابط (الأساسي: أسود بخط أبيض) */
+        .nav-menu a {
+            text-decoration: none;
+            color: #ffffff; /* النص أبيض */
+            background-color: #000000; /* الخلفية سوداء */
+            padding: 12px; /* تم تصغير حجم الزر قليلاً */
+            font-size: 1.1em;
+            font-weight: bold;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+            border: 2px solid #000000;
+        }
+        
+        /* تأثير التمرير (Hover/Active) - يصبح أبيض بخط أسود */
+        .nav-menu a:hover, 
+        .nav-menu a:active,
+        .nav-menu a:focus {
+            background-color: #ffffff; /* الخلفية بيضاء */
+            color: #000000; /* النص أسود */
+            transform: scale(1.02);
+            border-color: #000000;
+            box-shadow: 0 5px 12px rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="header-logo">
+        <!-- الشعار wight.jpg -->
+        <img src="wight.jpg" alt="3D Interior Design Logo">
+    </div>
+    
+    <!-- العنوان بالإنجليزية أولاً -->
+    <h1>3D Interior Design</h1>
+    <!-- ثم العنوان بالعربية تحته -->
+    <h2 class="arabic-title">التصميم الداخلي</h2>
+
+    <!-- الروابط تستخدم نفس صفحات المحتوى -->
+    <div class="nav-menu">
+        <a href="interior-about.html">معلومات عنا</a>
+        <a href="interior-portfolio.html">اعمال سابقة</a>
+        <a href="interior-contact.html">تواصل معنا</a>
+    </div>
+</body>
+</html>
